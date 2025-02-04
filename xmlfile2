@@ -1,0 +1,36 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Sequence Diagram">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Actor (사용자) -->
+        <mxCell id="2" value="사용자" style="shape=mxgraph.flowchart.start_terminator;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="120" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Participant (AuthServiceTest) -->
+        <mxCell id="3" value="AuthServiceTest" style="shape=rectangle;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Participant (AuthService) -->
+        <mxCell id="4" value="AuthService" style="shape=rectangle;" vertex="1" parent="1">
+          <mxGeometry x="500" y="100" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Edge: 사용자 → AuthServiceTest -->
+        <mxCell id="5" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Edge: AuthServiceTest → AuthService -->
+        <mxCell id="6" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
